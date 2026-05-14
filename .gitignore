@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.env
+data/connect.json
+*.log
+npm-debug.log*

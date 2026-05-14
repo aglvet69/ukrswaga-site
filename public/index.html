@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UKRSWAGA</title>
+    <meta
+      name="description"
+      content="UKRSWAGA — український Squad-проєкт з активною спільнотою та живим сервером."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/styles.css" />
+    <script src="/static/app.js" defer></script>
+  </head>
+  <body data-page="home">
+    <div class="page-stage">
+      <main class="server-card" aria-labelledby="detail-title">
+        <div class="server-card__top">
+          <p class="server-card__eyebrow">UKRSWAGA</p>
+          <div class="server-card__live">
+            <span id="status-pill" class="status-chip">
+              <span class="status-chip__dot" aria-hidden="true"></span>
+              <span id="status-pill-text">Завантаження…</span>
+            </span>
+            <span id="status-updated" class="status-updated">Оновлено —</span>
+          </div>
+        </div>
+
+        <div class="server-card__brand">
+          <img class="server-card__logo" src="/static/assets/logo.png" alt="UKRSWAGA logo" />
+          <h1 id="detail-title" class="server-card__title">Сервер завантажується</h1>
+          <p id="detail-subtitle" class="server-card__subtitle">Очікуємо дані сервера…</p>
+        </div>
+
+        <p id="detail-players-line" class="server-card__players">—</p>
+        <p id="detail-factions" class="server-card__factions">—</p>
+        <p id="detail-version" class="server-card__secondary" hidden></p>
+        <p id="detail-reserved" class="server-card__secondary" hidden></p>
+        <p id="join-feedback" class="server-card__feedback" hidden></p>
+
+        <div class="server-card__actions">
+          <button id="join-button" class="squad-button" type="button">
+            ПІДКЛЮЧИТИСЯ ДО СЕРВЕРУ
+          </button>
+          <a
+            class="discord-link"
+            href="https://discord.com/invite/ahsS7Pnpx"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Discord спільнота
+          </a>
+        </div>
+
+        <div id="fallback-box" class="fallback-panel" hidden>
+          <p class="fallback-panel__label">Резервний IP</p>
+          <div class="fallback-panel__row">
+            <input id="fallback-ip" class="fallback-input" type="text" readonly value="84.200.135.63:7797" />
+            <button id="copy-ip-button" class="fallback-copy" type="button">Скопіювати</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

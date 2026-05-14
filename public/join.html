@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UKRSWAGA Join</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/styles.css" />
+    <script src="/static/app.js" defer></script>
+  </head>
+  <body data-page="join">
+    <div class="page-stage page-stage--join">
+      <main class="join-card">
+        <div class="join-card__brand">
+          <img class="server-card__logo" src="/static/assets/logo.png" alt="UKRSWAGA logo" />
+          <p class="server-card__eyebrow">UKRSWAGA</p>
+          <h1 class="join-card__title">Підключення до сервера</h1>
+        </div>
+
+        <p id="join-page-status" class="join-card__text">Завантажуємо актуальне посилання для входу…</p>
+
+        <div class="server-card__actions server-card__actions--join">
+          <button id="open-steam-button" class="squad-button" type="button">
+            ПІДКЛЮЧИТИСЯ ДО СЕРВЕРУ
+          </button>
+          <a
+            class="discord-link"
+            href="https://discord.com/invite/ahsS7Pnpx"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Discord спільнота
+          </a>
+        </div>
+
+        <div class="fallback-panel fallback-panel--join">
+          <p class="fallback-panel__label">Резервний IP</p>
+          <div class="fallback-panel__row">
+            <input
+              id="join-fallback-ip"
+              class="fallback-input"
+              type="text"
+              readonly
+              value="84.200.135.63:7797"
+            />
+            <button id="join-copy-ip-button" class="fallback-copy" type="button">Скопіювати</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

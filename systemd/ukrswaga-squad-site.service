@@ -1,0 +1,15 @@
+[Unit]
+Description=UKRSWAGA Squad Project Website
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/ukrswaga-squad-site
+EnvironmentFile=/opt/ukrswaga-squad-site/.env
+ExecStart=/usr/bin/node dist/server.js
+Restart=always
+NoNewPrivileges=true
+ProtectSystem=full
+ReadWritePaths=/opt/ukrswaga-squad-site/data
+
+[Install]
+WantedBy=multi-user.target
